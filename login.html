@@ -2,14 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <title>Document</title>
+    <link rel="stylesheet" href="./loginStyle.css" />
   </head>
   <body>
     <div id="header">
@@ -33,9 +31,26 @@
       </div>
     </div>
     <div id="gameName"><b> QUIZ GAME</b></div>
-    <a href="./login.html"
-      ><button><b>START</b></button></a
-    >
+    <input
+      id="email"
+      type="email"
+      placeholder="Enter Your Email"
+      style="display: block"
+    />
+    <input
+      id="name"
+      type="text"
+      placeholder="Enter Your Name"
+      style="display: block"
+    />
+    <select id="choice">
+      <option value="">Choose Your Category</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="JAVASCRIPT">JAVASCRIPT</option>
+    </select>
+    <a href="./login.html"><button id="Submit">Submit</button></a>
+    <!-- <a href="#"><input id="Submit" type="button" value="Submit"/></a> -->
     <div id="circle1"></div>
     <div id="circle2"></div>
     <div id="circle3"></div>
@@ -43,6 +58,6 @@
     <div id="circle5"></div>
     <div id="circle6"></div>
     <div id="circle7"></div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
