@@ -7,7 +7,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="./loginStyle.css" />
+    <link rel="stylesheet" href="loginStyle.css" />
   </head>
   <body>
     <div id="header">
@@ -35,21 +35,21 @@
       id="email"
       type="email"
       placeholder="Enter Your Email"
-      style="display: block"
+    
     />
     <input
       id="name"
       type="text"
       placeholder="Enter Your Name"
-      style="display: block"
     />
-    <select id="choice">
+    <select id="choice" onchange="category()">
       <option value="">Choose Your Category</option>
-      <option value="HTML">HTML</option>
-      <option value="CSS">CSS</option>
-      <option value="JAVASCRIPT">JAVASCRIPT</option>
+      <option value="Math">Maths</option>
+      <option value="English">English</option>
+      <option value="Images">Images</option>
     </select>
-    <a href="./login.html"><button id="Submit">Submit</button></a>
+    <button id="submit" onclick="category()"><b>Submit</b></button>
+    <!--<button id="Submit">Submit</button>-->
     <!-- <a href="#"><input id="Submit" type="button" value="Submit"/></a> -->
     <div id="circle1"></div>
     <div id="circle2"></div>
@@ -58,6 +58,6 @@
     <div id="circle5"></div>
     <div id="circle6"></div>
     <div id="circle7"></div>
-    <script src="./script.js"></script>
+    <script src="script.js" ></script>
   </body>
 </html>
